@@ -36,5 +36,21 @@ h1 {
 }
 
 .image-container{
-    max-width: 640px;
+    margin: 10px 30%;
+}
+
+.image-container img{
+    width: 100%;
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 800px){
+    .image-container{
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+    
 }
