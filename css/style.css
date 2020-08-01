@@ -60,6 +60,8 @@ h1 {
     margin: 0 0 -20px 0;
     position: relative;
     bottom: 40px;
+    border-bottom: solid;
+    border-top: solid;
 }
 
 @media screen and (max-width: 800px){
