@@ -28,6 +28,10 @@ function displayPhotos(){
     totalImages = photosArray.length;
     console.log('total images', totalImages);
     photosArray.forEach((photo)=>{
+        const caption = document.createElement('p');
+        caption.classList.add('caption');
+        caption.innerText = photo.alt_description;
+
         const item = document.createElement('a');
         setAttributes(item, {
             href: photo.links.html,
@@ -39,13 +43,13 @@ function displayPhotos(){
             src: photo.urls.regular,
             alt: photo.alt_description,
             title: photo.alt_description
-        })
-
+        });
+    
         img.addEventListener('load', imageLoader);
-
-
         item.appendChild(img);
         imageContainer.appendChild(item);
+        imageContainer.appendChild(caption);
+        
     });
 }
 

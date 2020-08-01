@@ -2,6 +2,7 @@
 
 html{
     box-sizing: border-box;
+    letter-spacing: 2px;
 }
 
 body{
@@ -11,9 +12,16 @@ body{
     background-color: whitesmoke;
 }
 
+header {
+    background: antiquewhite;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+}
+
 h1 {
     text-align: center;
-    margin-top: 25xp;
     margin-bottom: 15px;
     font-size: 40px;
     letter-spacing: 5px;
@@ -42,6 +50,16 @@ h1 {
 .image-container img{
     width: 100%;
     margin-top: 5px;
+}
+
+.caption {
+    text-align: center;
+    background-color: rgb(255 255 255 / 60%);
+    z-index: 1;
+    width: 100%;
+    margin: 0 0 -20px 0;
+    position: relative;
+    bottom: 40px;
 }
 
 @media screen and (max-width: 800px){
