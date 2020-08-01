@@ -1,4 +1,4 @@
-let getImageCount = 3;
+let getImageCount = 2;
 let ready = false;
 let imagesLoaded = 0;
 let totalImages = 0;
